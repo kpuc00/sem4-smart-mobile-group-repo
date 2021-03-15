@@ -1,0 +1,39 @@
+{
+  "short_name": "PWA",
+  "name": "Progressive Web App",
+  "icons": [
+    {
+      "src": "/images/maskable_icon_x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/maskable_icon_x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "/",
+  "shortcuts": [
+    {
+      "name": "Homepage",
+      "short_name": "Home",
+      "description": "Website homepage",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/images/maskable_icon_x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "background_color": "#ff3300",
+  "display": "standalone",
+  "orientation": "any",
+  "scope": "/",
+  "theme_color": "#404040",
+  "description": "PWA Project"
+}
