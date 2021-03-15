@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Barrio|Ubuntu&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +16,7 @@ body {
 .navbar {
     overflow: hidden;
     background-color: #404040;
-    font-family: 'Barrio', cursive;
+    font-family: 'Arial';
     min-width: 620px;
     margin-bottom: 1.5em;
 }
@@ -48,7 +47,7 @@ body {
     color: white;
     padding: 14px 16px;
     background-color: #404040;
-    font-family: 'Barrio', cursive;
+    font-family: 'Arial';
     margin: 0;
 }
 
@@ -59,7 +58,7 @@ body {
     color: white;
     padding: 14px 16px;
     background-color: #ff3300;
-    font-family: 'Barrio', cursive;
+    font-family: 'Arial';
     margin: 0;
 }
 
@@ -121,7 +120,7 @@ footer {
     min-width: 620px;
     clear: left;
     background: #404040;
-    font-family: 'Barrio', cursive;
+    font-family: 'Arial';
     color: white;
     text-align: center;
     padding: 20px;
@@ -142,43 +141,6 @@ footer a:active {
     background: #ff3300;
 }
 
-.assignment {
-    margin: auto;
-    padding: 10px;
-    max-width: 700px;
-}
-
-.download-button:link,
-.download-button:visited {
-    background: #404040;
-    color: white;
-    padding: 14px 25px;
-    font-family: 'Barrio', cursive;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 30px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-}
-
-.download-button:hover,
-.download-button:active {
-    background-color: #ff3300;
-}
-
-.video-container {
-    position: relative;
-    padding-top: 56.25%;
-}
-
-.video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 .tab {
     margin-left: 3%;
 }
@@ -194,7 +156,7 @@ footer a:active {
 }
 
 .header {
-    font-family: 'Barrio', cursive;
+    font-family: 'Arial';
     text-align: center;
     margin-bottom: 50px;
 }
@@ -210,18 +172,6 @@ footer a:active {
 .centered {
     margin: auto;
     text-align: center;
-}
-
-.social {
-    border-radius: 50%;
-    width: 8%;
-    margin: 20px;
-    text-align: center;
-}
-
-.social:hover {
-    background-color: white;
-    opacity: 0.6;
 }
 
 hr {
@@ -243,10 +193,4 @@ hr {
 
 .active {
     background-color: #ff3300;
-}
-
-.sitemap {
-    margin-left: 50px;
-    font-size: 20px;
-    list-style-type: none;
 }
