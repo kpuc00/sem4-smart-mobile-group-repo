@@ -2,5 +2,4 @@
     function showPopUp() {
     var popup = document.getElementById("filterPopUp");
     popup.classList.toggle("show");
-    console.log("habibi");
 }
