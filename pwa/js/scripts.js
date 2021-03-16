@@ -19,7 +19,7 @@ if (typeof Notification !== typeof undefined) { //First check if the API is avai
     if (result === "granted") {
       console.log("Browser: User accepted receiving notifications, save as subscriber data!");
       navigator.serviceWorker.ready.then(function (serviceworker) { //When the Service Worker is ready, generate the subscription with our Serice Worker's pushManager and save it to our list
-        const VAPIDPublicKey = "BJOg4KwXT_5P0E0uKkhwMN0-lp7GRK7mJbIF1X7PsRt_aQm6bhGWdtKw788UCS2v8HBkzPT_ji6TA1PRHNFLXXI"; // Fill in your VAPID publicKey here
+        const VAPIDPublicKey = "BDnwK7k1rTmJ-uquhgIob7Z9sdT0buW5Y9adi010GAOFBVa7uqJI5WlJHHvAALgLV4WMdi5PHALlmuxpNx1f1yE"; // Fill in your VAPID publicKey here
         const options = { applicationServerKey: VAPIDPublicKey, userVisibleOnly: true } //Option userVisibleOnly is neccesary for Chrome
         serviceworker.pushManager.subscribe(options).then((subscription) => {
           //POST the generated subscription to our saving script (this needs to happen server-side, (client-side) JavaScript can't write files or databases)
