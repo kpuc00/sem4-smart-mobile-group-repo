@@ -4,3 +4,9 @@
     margin: 0;
     text-align: center;
 }
+.card-text{
+    height: 100px;
+}
+.card-title{
+    height: 33px;
+}
