@@ -27,10 +27,56 @@ $.ajax({
         console.log(data);
         let job = data[29];
         console.log(job);
-        $('#currentjobs').append("<div class='card' style='width: 18rem;'><div class='card-body'>" +
+        $('#currentjobs').append("<div class='card' style='width: 18rem; margin: auto;'>" +
+            "<div class='card-header'>" +
             "<h5 class='card-title'>" + job.company + "</h5>" +
-            "<p class='card-text'>" + job.description + "</p>" +
-            "<a href='#' class='btn btn-primary'>See more</a></div></div>"
+            "</div>" +
+            "<div class='card-body'>" +
+            "<p class='card-text'><b>Description: </b>" + job.description + "</p>" +
+            "<p class='card-text'><b>Salary: </b>" + job.salary + "</p>" +
+            "</div>" +
+            "<div class='card-footer'><a href='#' class='btn btn-primary'>See more</a></div>" +
+            "</div>"
         );
+    }
+})
+
+$.ajax({
+    type: 'GET',
+    url: 'data/jobs.json',
+    data: data,
+    dataType: 'json',
+    success: function (data) {
+        let jobs = data.slice(82, 88);
+        $.each(jobs, function (index, job) {
+            const card = "<div class='mb-3'>" +
+                "<div class='card' style='width: 18rem; margin: auto;'>" +
+                "<div class='card-header'>" +
+                "<h5 class='card-title'>" + job.company + "</h5>" +
+                "</div>" +
+                "<div class='card-body'>" +
+                "<p class='card-text'><b>Description: </b>" + job.description + "</p>" +
+                "<p class='card-text'><b>Salary: </b>" + job.salary + "</p>" +
+                "</div>" +
+                "<div class='card-footer'><a href='#' class='btn btn-primary'>See more</a></div>" +
+                "</div></div>";
+            switch (index % 3) {
+                case 0:
+                    $("#col-1").append(
+                        card
+                    )
+                    break;
+                case 1:
+                    $("#col-2").append(
+                        card
+                    )
+                    break;
+                case 2:
+                    $("#col-3").append(
+                        card
+                    )
+                    break;
+            }
+        });
     }
 })
