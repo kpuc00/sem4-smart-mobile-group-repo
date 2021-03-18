@@ -20,6 +20,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/getAllJobs.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
 </head>
 <body>
     <!--Navigation bar-->
@@ -63,7 +66,7 @@
 <!--            <form class="d-flex">-->
                 <div class="custom-search">
                     <input type="text" class="custom-search-input" placeholder="Search">
-                    <button class="custom-search-button" onclick="showPopUp();">
+                    <button class="custom-search-button" onclick="showPopUp();" id="filterBtn">
                         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
                     </button>
                 </div>
@@ -71,53 +74,6 @@
             <center>
                 <div class="filtersPopUp">
                     <div class="popUpText" id="filterPopUp">
-                        <h3 class="card-title">Advanced Search</h3>
-                        <h6>Minimum Payment</h6>
-                        <input type="range"/><br>
-                        <h6>Time Span</h6>
-                        <select>
-                            <option value="" selected disabled hidden>Choose here</option>
-                            <option>< 1 day</option>
-                            <option>1 day</option>
-                            <option>1 week</option>
-                            <option>> month</option>
-                        </select>
-                        <h6>Location</h6>
-                        <select>
-                            <option value="" selected disabled hidden>Choose here</option>
-                            <option>Australia</option>
-                            <option>New Zealand</option>
-                            <option>Netherlands</option>
-                            <option>France</option>
-                        </select>
-                        <br>
-                        <h6>Level</h6>
-                        <select>
-                            <option value="" selected disabled hidden>Choose here</option>
-                            <option>Beginner</option>
-                            <option>Intermediate</option>
-                            <option>Expert</option>
-                        </select>
-                        <br>
-                        <h6>Type of Marketing</h6>
-                        <select>
-                            <option value="" selected disabled hidden>Choose here</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select>
-                        <br>
-                        <h6>Language Required</h6>
-                        <select>
-                            <option value="" selected disabled hidden>Choose here</option>
-                            <option>English</option>
-                            <option>Dutch</option>
-                            <option>German</option>
-                            <option>French</option>
-                            <option>Hindi</option>
-                        </select>
-                        <br>
                     </div>
                 </div>
             </center>

@@ -1,4 +1,5 @@
 .custom-search {
+    margin: auto;
     position: relative;
     width: 80vw;
 }
@@ -33,28 +34,33 @@
 }
 
 .filtersPopUp{
-    position: relative;
-    display: inline-block;
-    /*-webkit-user-select: none;*/
-    /*-moz-user-select: none;*/
-    /*-ms-user-select: none;*/
-    /*user-select: none;*/
-    width: 75%;
-    height: 60%;
+    /*position: relative;*/
+    /*display: inline-block;*/
+    /*!*-webkit-user-select: none;*!*/
+    /*!*-moz-user-select: none;*!*/
+    /*!*-ms-user-select: none;*!*/
+    /*!*user-select: none;*!*/
+    /*margin-top: 2%;*/
+    /*width: 50%;*/
+    /*height: 60%;*/
 }
 
 .filtersPopUp .popUpText {
-    visibility: hidden;
-    background-color: #FFF;
-    color: #474747;
-    text-align: left;
-    border-radius: 2px;
-    border: #474747 solid 0.01rem;
-    position: relative;
+    /*visibility: hidden;*/
+    /*background-color: #FFF;*/
+    /*color: #474747;*/
+    /*text-align: left;*/
+    /*border-radius: 2px;*/
+    /*border: #474747 solid 0.01rem;*/
+    /*position: relative;*/
 }
 .filtersPopUp .popUpText h3{
     text-align: center;
 }
+.filtersPopUp .popUpText .row{
+    margin: 5%;
+}
+
 
 /*.filtersPopUp .popUpText::after {*/
 /*    content: "";*/
@@ -65,19 +71,19 @@
 /*}*/
 
 /* Toggle this class - hide and show the popup */
-.filtersPopUp .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
+/*.filtersPopUp .show {*/
+/*    visibility: visible;*/
+/*    -webkit-animation: fadeIn 1s;*/
+/*    animation: fadeIn 1s;*/
+/*}*/
 
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
+/*!* Add animation (fade in the popup) *!*/
+/*@-webkit-keyframes fadeIn {*/
+/*    from {opacity: 0;}*/
+/*    to {opacity: 1;}*/
+/*}*/
 
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-}
+/*@keyframes fadeIn {*/
+/*    from {opacity: 0;}*/
+/*    to {opacity:1 ;}*/
+/*}*/
