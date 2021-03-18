@@ -1,6 +1,6 @@
 {
-  "short_name": "PWA",
-  "name": "Progressive Web App",
+  "short_name": "Freepy",
+  "name": "Freepy",
   "icons": [
     {
       "src": "/images/maskable_icon_x192.png",
@@ -36,10 +36,10 @@
       ]
     }
   ],
-  "background_color": "#ff3300",
+  "background_color": "#f8f9fa",
   "display": "standalone",
   "orientation": "any",
   "scope": "/",
-  "theme_color": "#404040",
-  "description": "PWA Project"
+  "theme_color": "#f8f9fa",
+  "description": "Freelancing app for everyone."
 }

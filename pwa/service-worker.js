@@ -1,4 +1,4 @@
-const cacheName = "KPUC_V1";
+const cacheName = "FREEPY_V1";
 const appFiles = [
   "/manifest.json",
   "/js/scripts.js",
