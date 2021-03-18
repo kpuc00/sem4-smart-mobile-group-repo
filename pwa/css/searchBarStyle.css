@@ -33,57 +33,13 @@
     color: #474747;
 }
 
-.filtersPopUp{
-    /*position: relative;*/
-    /*display: inline-block;*/
-    /*!*-webkit-user-select: none;*!*/
-    /*!*-moz-user-select: none;*!*/
-    /*!*-ms-user-select: none;*!*/
-    /*!*user-select: none;*!*/
-    /*margin-top: 2%;*/
-    /*width: 50%;*/
-    /*height: 60%;*/
+.filtersPopUp .popUpText{
+
 }
 
-.filtersPopUp .popUpText {
-    /*visibility: hidden;*/
-    /*background-color: #FFF;*/
-    /*color: #474747;*/
-    /*text-align: left;*/
-    /*border-radius: 2px;*/
-    /*border: #474747 solid 0.01rem;*/
-    /*position: relative;*/
-}
 .filtersPopUp .popUpText h3{
     text-align: center;
 }
 .filtersPopUp .popUpText .row{
     margin: 5%;
 }
-
-
-/*.filtersPopUp .popUpText::after {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    border-width: 5px;*/
-/*    border-style: solid;*/
-/*    border-color: #555 transparent transparent transparent;*/
-/*}*/
-
-/* Toggle this class - hide and show the popup */
-/*.filtersPopUp .show {*/
-/*    visibility: visible;*/
-/*    -webkit-animation: fadeIn 1s;*/
-/*    animation: fadeIn 1s;*/
-/*}*/
-
-/*!* Add animation (fade in the popup) *!*/
-/*@-webkit-keyframes fadeIn {*/
-/*    from {opacity: 0;}*/
-/*    to {opacity: 1;}*/
-/*}*/
-
-/*@keyframes fadeIn {*/
-/*    from {opacity: 0;}*/
-/*    to {opacity:1 ;}*/
-/*}*/

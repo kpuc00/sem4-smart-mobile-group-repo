@@ -10,14 +10,15 @@
         else{
             $(".filtersPopUp").css(' position: relative;\n' +
                 '    display: inline-block;\n' +
-                '    /*-webkit-user-select: none;*/\n' +
-                '    /*-moz-user-select: none;*/\n' +
-                '    /*-ms-user-select: none;*/\n' +
-                '    /*user-select: none;*/\n' +
                 '    margin-top: 2%;\n' +
                 '    width: 50%;\n' +
                 '    height: 60%;')
-            $("#filterPopUp").append(' <h3 class="card-title">Advanced Search</h3>\n' +
+
+            $("#filterPopUp").append(
+                '<div style=" border: #474747 solid 0.01rem;\n' +
+                '    border-radius: 2px;\n' +
+                '    margin-top: 1%;">'+
+                ' <h3 class="card-title">Advanced Search</h3>\n' +
                 '    <div class="row">\n' +
                 '        <div class="col-sm">\n' +
                 '            <h6>Minimum Payment</h6>\n' +
@@ -102,14 +103,15 @@
                 '        <div class="col-sm">\n' +
                 '            <button style="float: right" class="btn btn-info" onClick="$(\'#filterBtn\').click()">Confirm</button>\n' +
                 '        </div>\n' +
-                '    </div>\n');
+                '    </div>\n' +
+                '</div>'
+            );
             shown  = true;
         }
         $("#filterPopUp").css('background-color: #FFF;\n' +
             '    color: #474747;\n' +
             '    text-align: left;\n' +
             '    border-radius: 2px;\n' +
-            '    border: #474747 solid 0.01rem;\n' +
             '    position: relative;')
 
 }
