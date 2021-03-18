@@ -9,7 +9,7 @@ $.ajax({
             const card =  '<div class="my-3">\n' +
                 '                            <div class="card" style="width: 18rem;">\n' +
                 '                                <div class="card-body">\n' +
-                '                                    <h5 class="card-title">' + element.id + element.company + '</h5>\n' +
+                '                                    <h5 class="card-title">' + element.company + '</h5>\n' +
                 '                                    <p class="card-text">'
                 + element.description +
                 '</p>\n' +

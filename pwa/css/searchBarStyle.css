@@ -35,32 +35,34 @@
 .filtersPopUp{
     position: relative;
     display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    /*-webkit-user-select: none;*/
+    /*-moz-user-select: none;*/
+    /*-ms-user-select: none;*/
+    /*user-select: none;*/
+    width: 75%;
+    height: 60%;
 }
 
 .filtersPopUp .popUpText {
     visibility: hidden;
-    width: 160px;
     background-color: #FFF;
     color: #474747;
+    text-align: left;
+    border-radius: 2px;
+    border: #474747 solid 0.01rem;
+    position: relative;
+}
+.filtersPopUp .popUpText h3{
     text-align: center;
-    border-radius: 5px;
-    position: absolute;
-    z-index: 1;
 }
 
-.filtersPopUp .popUpText::after {
-    content: "";
-    position: absolute;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
+/*.filtersPopUp .popUpText::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    border-width: 5px;*/
+/*    border-style: solid;*/
+/*    border-color: #555 transparent transparent transparent;*/
+/*}*/
 
 /* Toggle this class - hide and show the popup */
 .filtersPopUp .show {
