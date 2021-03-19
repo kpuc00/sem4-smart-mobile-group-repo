@@ -12,7 +12,7 @@ self.addEventListener('install', (event) => {
     event.waitUntil((async () => {
         const cache = await caches.open(cacheName);
         await cache.addAll(OFFLINE_FILES);
-        await cache.add(new Request(OFFLINE_IMG));
+        await cache.add(new Request(OFFLINE_IMG, {cache: 'reload'}));
         await cache.add(new Request(OFFLINE_URL, {cache: 'reload'}));
     })());
 });
