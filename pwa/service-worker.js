@@ -2,8 +2,13 @@ const cacheName = "FREEPY_V1";
 const appFiles = [
   "/manifest.json",
   "/js/scripts.js",
-  "/css/style.css"
+  "/css/style.css",
+  "/images/favicon.ico",
+  "/images/ph.jpg",
+  "/images/sst.jpg",
+  "offline.html"
 ];
+const offlineUrl = "offline.html";
 
 self.addEventListener("install", (installing) => {
   installing.waitUntil(
@@ -22,12 +27,12 @@ self.addEventListener("fetch", (fetching) => {
   fetching.respondWith(
       caches.match(fetching.request.url).then((response) => {
         console.log("Service Worker: Fetching resource " + fetching.request.url);
-        return response || fetch(fetching.request).then((response1) => {
+        return response || fetch(fetching.request).then((response) => {
           console.log("Service Worker: Resource " + fetching.request.url + " not available in cache");
           return caches.open(cacheName).then((cache) => {
             console.log("Service Worker: Caching (new) resource " + fetching.request.url);
-            cache.put(fetching.request, response1.clone());
-            return response1;
+            cache.put(fetching.request, response.clone());
+            return response;
           });
         }).catch(function () {
           console.log("Service Worker: Fetching online failed, HAALLPPPP!!!");

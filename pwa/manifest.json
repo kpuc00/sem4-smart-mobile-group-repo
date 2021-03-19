@@ -34,6 +34,54 @@
           "sizes": "192x192"
         }
       ]
+    },
+    {
+      "name": "Leaderboards",
+      "short_name": "Leaderboards",
+      "description": "See top marketers",
+      "url": "/leaderboards.html",
+      "icons": [
+        {
+          "src": "/images/maskable_icon_x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Blog",
+      "short_name": "Blog",
+      "description": "Find useful research material.",
+      "url": "/blog.html",
+      "icons": [
+        {
+          "src": "/images/maskable_icon_x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Store",
+      "short_name": "Store",
+      "description": "Use your earned credits to get useful services for work.",
+      "url": "/store.html",
+      "icons": [
+        {
+          "src": "/images/maskable_icon_x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Profile",
+      "short_name": "Profile",
+      "description": "View your data.",
+      "url": "/profile.html",
+      "icons": [
+        {
+          "src": "/images/maskable_icon_x192.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ],
   "background_color": "#f8f9fa",

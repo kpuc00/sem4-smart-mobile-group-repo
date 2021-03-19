@@ -25,11 +25,8 @@ if (typeof Notification !== typeof undefined) { //First check if the API is avai
           //POST the generated subscription to our saving script (this needs to happen server-side, (client-side) JavaScript can't write files or databases)
           let subscriberFormData = new FormData();
           subscriberFormData.append("json", JSON.stringify(subscription));
-          console.log(JSON.stringify(subscription))
           fetch("data/saveSubscription.php", { method: "POST", body: subscriberFormData });
         });
-      }).catch((error) =>{
-        console.log(error)
       });
     }
   }).catch((error) => {
