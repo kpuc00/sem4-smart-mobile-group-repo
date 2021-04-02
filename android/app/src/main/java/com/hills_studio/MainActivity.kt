@@ -19,7 +19,8 @@ class MainActivity : AppCompatActivity() {
             if (b.etEmail.text.trim()
                     .isNotEmpty() && b.etPassword.text.trim().isNotEmpty()
             ) {
-                Toast.makeText(this, "Login clicked", Toast.LENGTH_LONG).show()
+                val intent = Intent(this, AppActivity::class.java)
+                startActivity(intent)
             } else {
                 Toast.makeText(this, "Input required", Toast.LENGTH_LONG).show()
             }
