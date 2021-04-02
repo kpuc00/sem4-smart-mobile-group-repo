@@ -11,7 +11,7 @@
         android:theme="@style/Theme.AndroidPSMThingie">
         <activity
             android:name=".AppActivity"
-            android:label="@string/title_activity_app"></activity>
+            android:label="@string/title_activity_app" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

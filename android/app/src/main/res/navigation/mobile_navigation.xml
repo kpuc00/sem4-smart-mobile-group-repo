@@ -14,17 +14,17 @@
     <fragment
         android:id="@+id/navigation_collections"
         android:name="com.hills_studio.ui.collections.CollectionsFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/title_collections"
         tools:layout="@layout/fragment_collections" />
 
     <fragment
         android:id="@+id/navigation_events"
         android:name="com.hills_studio.ui.members.MembersFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/events_title"
         tools:layout="@layout/fragment_events" />
     <fragment
         android:id="@+id/navigation_members"
         android:name="com.hills_studio.ui.members.MembersFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/members_title"
         tools:layout="@layout/fragment_members" />
 </navigation>
