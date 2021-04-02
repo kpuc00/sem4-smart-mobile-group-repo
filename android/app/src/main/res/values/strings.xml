@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">AndroidPSM Thingie</string>
+    <string name="login">Login</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="not_registered">Not registered?</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="register">Register</string>
+    <string name="full_name">Full name</string>
+    <string name="create_account">Create account</string>
+    <string name="phone">Phone number</string>
 </resources>
