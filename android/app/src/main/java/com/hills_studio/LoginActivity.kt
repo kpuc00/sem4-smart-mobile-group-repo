@@ -4,16 +4,16 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.hills_studio.databinding.ActivityMainBinding
+import com.hills_studio.databinding.ActivityLoginBinding
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var b: ActivityMainBinding
+class LoginActivity : AppCompatActivity() {
+    private lateinit var b: ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_login)
 
-        b = ActivityMainBinding.inflate(layoutInflater)
+        b = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(b.root)
         b.btnLogin.setOnClickListener {
             if (b.etEmail.text.trim()
