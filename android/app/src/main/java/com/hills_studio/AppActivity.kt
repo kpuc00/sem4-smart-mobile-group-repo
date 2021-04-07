@@ -2,6 +2,7 @@ package com.hills_studio
 
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 import android.widget.Toolbar
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -14,14 +15,12 @@ import com.hills_studio.databinding.ActivityAppBinding
 
 class AppActivity : AppCompatActivity() {
 
-//    private lateinit var binding: ActivityAppBinding
+    private lateinit var binding: ActivityAppBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_app)
         //setSupportActionBar(findViewById(R.id.toolbar))
-
-        //findViewById(R.id.toolbar).
 
         //binding = ActivityAppBinding.inflate(layoutInflater)
         //val view = binding.root
