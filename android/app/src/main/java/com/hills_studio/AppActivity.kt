@@ -42,15 +42,15 @@ class AppActivity : AppCompatActivity() {
 
 
     override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
-        R.id.action_settings -> {
+        R.id.toolbar_account -> {
             val toast = Toast.makeText(applicationContext, "Hello Javatpoint", Toast.LENGTH_LONG)
             toast.show()
             true
         }
 
-        R.id.action_favorite -> {
-            // User chose the "Favorite" action, mark the current item
-            // as a favorite...
+        R.id.toolbar_settings -> {
+            val toast = Toast.makeText(applicationContext, "Hello Javatpoint1", Toast.LENGTH_LONG)
+            toast.show()
             true
         }
 
