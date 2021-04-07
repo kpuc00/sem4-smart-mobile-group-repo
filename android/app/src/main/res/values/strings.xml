@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndroidPSM Thingie</string>
+    <string name="app_name">Familylada</string>
     <string name="title_activity_app">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
@@ -38,4 +38,7 @@
     <string name="hobbies">Hobbies</string>
     <string name="editHobbies">Edit</string>
     <string name="save_changes">Save changes</string>
+    <string name="account">Account</string>
+    <string name="settings">Settings</string>
+    <string name="familylada">Familylada</string>
 </resources>
