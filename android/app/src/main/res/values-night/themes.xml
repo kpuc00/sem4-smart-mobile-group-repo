@@ -4,7 +4,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <!-- Colors. -->
-        <item name="colorPrimary">@color/red_darkMode</item>
+        <item name="colorPrimary">@color/orange_light</item>
         <item name="colorPrimaryVariant">@color/orange_dark</item>
         <item name="colorSecondary">@color/red</item>
         <item name="colorSecondaryVariant">@color/red</item>
@@ -16,6 +16,7 @@
         <item name="colorOnBackground">@color/white</item>
         <item name="colorOnSurface">@color/white</item>
         <item name="colorOnError">@color/black</item>
+        <item name="toolbarId">?background</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/background</item>
         <!-- Customize your theme here. -->
