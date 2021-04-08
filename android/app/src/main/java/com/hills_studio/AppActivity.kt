@@ -1,8 +1,12 @@
 package com.hills_studio
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
+import android.widget.ImageView
 import android.widget.Toast
 import android.widget.Toolbar
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -19,18 +23,14 @@ class AppActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_app)
+        binding = ActivityAppBinding.inflate(layoutInflater)
+        val view  = binding.root
+        setContentView(view)
         setSupportActionBar(findViewById(R.id.toolbar))
-
-        //binding = ActivityAppBinding.inflate(layoutInflater)
-        //val view = binding.root
-       // setContentView(view)
 
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
 
         val navController = findNavController(R.id.nav_host_fragment)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.navigation_home, R.id.navigation_collections, R.id.navigation_events, R.id.navigation_members
@@ -38,27 +38,30 @@ class AppActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        val accountBtn: ImageView = findViewById(R.id.toolbar_account)
+        val settingsBtn: ImageView = findViewById(R.id.toolbar_settings)
+
+        accountBtn.setOnClickListener{
+            val id: Int  = R.id.toolbar_account
+            openActivity(id)
+        }
+        settingsBtn.setOnClickListener{
+            val id: Int  = R.id.toolbar_settings
+            openActivity(id)
+        }
     }
 
-
-
-    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
-        R.id.toolbar_account -> {
-            val toast = Toast.makeText(applicationContext, "Hello Javatpoint", Toast.LENGTH_LONG)
-            toast.show()
-            true
+    private fun openActivity(id:Int) {
+        intent
+        when(id){
+            R.id.toolbar_settings ->{
+                intent = Intent(applicationContext, SettingsActivity::class.java)
+            }
+            R.id.toolbar_account ->{
+                intent = Intent(applicationContext, ProfilePageActivity::class.java)
+            }
         }
-
-        R.id.toolbar_settings -> {
-            val toast = Toast.makeText(applicationContext, "Hello Javatpoint1", Toast.LENGTH_LONG)
-            toast.show()
-            true
-        }
-
-        else -> {
-            // If we got here, the user's action was not recognized.
-            // Invoke the superclass to handle it.
-            super.onOptionsItemSelected(item)
-        }
+        startActivity(intent)
     }
 }
