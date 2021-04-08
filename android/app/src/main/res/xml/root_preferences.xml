@@ -19,12 +19,12 @@
             android:title="Share location" />
         <ListPreference
             android:defaultValue="@string/dark_mode_def_value"
-            android:icon="@drawable/ic_baseline_dark_mode_24"
             android:entries="@array/dark_mode_entries"
             android:entryValues="@array/dark_mode_values"
+            android:icon="@drawable/ic_baseline_dark_mode_24"
             android:key="@string/dark_mode"
             android:title="@string/dark_mode"
-            app:useSimpleSummaryProvider="true"/>
+            app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
     <PreferenceCategory>
 
