@@ -1,35 +1,38 @@
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory app:title="@string/messages_header">
+    <PreferenceCategory>
 
-        <EditTextPreference
-            app:key="signature"
-            app:title="@string/signature_title"
-            app:useSimpleSummaryProvider="true" />
-
+        <SwitchPreference
+            android:defaultValue="true"
+            android:icon="@drawable/ic_baseline_notifications_24"
+            android:key="spPushNotifications"
+            android:summaryOff="You switched off the notifications from the app"
+            android:summaryOn="Your phone will receive notifications from the app"
+            android:title="Push notifications" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:icon="@drawable/ic_baseline_my_location_24"
+            android:key="spLocation"
+            android:summaryOff="You are now invisible on the map"
+            android:summaryOn="Now your family can see your location on the map"
+            android:title="Share location" />
         <ListPreference
-            app:defaultValue="reply"
-            app:entries="@array/reply_entries"
-            app:entryValues="@array/reply_values"
-            app:key="reply"
-            app:title="@string/reply_title"
-            app:useSimpleSummaryProvider="true" />
-
+            android:defaultValue="@string/dark_mode_def_value"
+            android:icon="@drawable/ic_baseline_dark_mode_24"
+            android:entries="@array/dark_mode_entries"
+            android:entryValues="@array/dark_mode_values"
+            android:key="@string/dark_mode"
+            android:title="@string/dark_mode"
+            app:useSimpleSummaryProvider="true"/>
     </PreferenceCategory>
+    <PreferenceCategory>
 
-    <PreferenceCategory app:title="@string/sync_header">
-
-        <SwitchPreferenceCompat
-            app:key="sync"
-            app:title="@string/sync_title" />
-
-        <SwitchPreferenceCompat
-            app:dependency="sync"
-            app:key="attachment"
-            app:summaryOff="@string/attachment_summary_off"
-            app:summaryOn="@string/attachment_summary_on"
-            app:title="@string/attachment_title" />
-
+        <Preference
+            android:id="@+id/pEditAccount"
+            android:title="@string/edit_account" />
+        <Preference
+            android:id="@+id/pLogout"
+            android:title="@string/logout" />
     </PreferenceCategory>
-
 </PreferenceScreen>

@@ -6,17 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ProfilePageActivity">
 
-    <include layout="@layout/toolbar"/>
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/profilePic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@tools:sample/avatars[0]"
         tools:ignore="ContentDescription"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -29,7 +30,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/profilePic"
         tools:text="John Doe" />
 
     <EditText
@@ -37,14 +38,14 @@
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:layout_marginTop="8dp"
+        android:autofillHints=""
         android:ems="14"
         android:gravity="start|top"
         android:hint="@string/status"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvFullName"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/tvFullName" />
 
     <TextView
         android:id="@+id/tvHobbies"
