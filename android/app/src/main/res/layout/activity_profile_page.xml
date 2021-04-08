@@ -20,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ContentDescription"
         tools:srcCompat="@tools:sample/avatars" />
+<!--    app:srcCompat="@tools:sample/avatars[0]"-->
 
     <TextView
         android:id="@+id/tvFullName"

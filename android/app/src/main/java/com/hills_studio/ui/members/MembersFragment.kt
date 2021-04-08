@@ -20,14 +20,14 @@ class MembersFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        membersViewModel =
-            ViewModelProvider(this).get(MembersViewModel::class.java)
+//        membersViewModel =
+//            ViewModelProvider(this).get(MembersViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_members, container, false)
 //        val textView: TextView = root.findViewById(R.id.text_notifications)
 //        membersViewModel.text.observe(viewLifecycleOwner, Observer {
 //            textView.text = it
 //        })
-        (activity as AppCompatActivity?)!!.supportActionBar!!.title = ""
+//        (activity as AppCompatActivity?)!!.supportActionBar!!.title = ""
         return root
     }
 }

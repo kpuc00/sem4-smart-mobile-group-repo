@@ -20,14 +20,14 @@ class EventsFragment : Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        eventsViewModel =
-            ViewModelProvider(this).get(EventsViewModel::class.java)
+       // eventsViewModel =
+          //  ViewModelProvider(this).get(EventsViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_events, container, false)
 //        val textView: TextView = root.findViewById(R.id.text_dashboard)
 //        collectionsViewModel.text.observe(viewLifecycleOwner, Observer {
 //            textView.text = it
 //        })
-        (activity as AppCompatActivity?)!!.supportActionBar!!.title = ""
+       // (activity as AppCompatActivity?)!!.supportActionBar!!.title = ""
         return root
     }
 }
