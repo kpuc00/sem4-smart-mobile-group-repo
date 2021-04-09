@@ -5,10 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
 import android.view.View
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.Toast
-import android.widget.Toolbar
+import android.widget.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
