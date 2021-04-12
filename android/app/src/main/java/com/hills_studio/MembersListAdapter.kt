@@ -17,8 +17,8 @@ internal class MembersListAdapter internal constructor(
         return if (this.membersList != null) this.membersList.size else 0
     }
 
-    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        var convertView = convertView
+    override fun getView(position: Int, givenConvertView: View?, parent: ViewGroup): View {
+        var convertView = givenConvertView
 
         val holder: ItemHolder
         if (convertView == null) {

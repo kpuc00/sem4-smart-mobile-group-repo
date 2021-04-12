@@ -6,10 +6,14 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.GridView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
+import com.hills_studio.MapsFragment
 import com.hills_studio.R
 import com.hills_studio.getJsonDataFromAsset
+
 
 class MembersFragment : Fragment() {
 
@@ -63,6 +67,20 @@ class MembersFragment : Fragment() {
 //        membersViewModel.text.observe(viewLifecycleOwner, Observer {
 //            textView.text = it
 //        })
+        val btnOpenMap = root.findViewById<Button>(R.id.btnOpenMap)
+        btnOpenMap.setOnClickListener {
+            val mapsFragment: Fragment = MapsFragment()
+            val transaction: FragmentTransaction = parentFragmentManager.beginTransaction()
+            transaction.replace(
+                R.id.members_fragment,
+                mapsFragment
+            ) // give your fragment container id in first parameter
+
+            transaction.addToBackStack(null) // if written, this transaction will be added to backstack
+
+            transaction.commit()
+        }
+
         return root
     }
 }
