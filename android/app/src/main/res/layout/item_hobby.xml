@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/grid_view_items"
+    android:id="@+id/item_member"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -9,24 +9,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <ImageView
-        android:id="@+id/memberAvatar"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:padding="5dp"
-        android:scaleType="fitXY"
-        tools:srcCompat="@tools:sample/avatars"
-        tools:ignore="ContentDescription" />
-
     <TextView
-        android:id="@+id/memberName"
+        android:id="@+id/hobbyTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/memberAvatar"
-        android:layout_centerHorizontal="true"
         android:gravity="center"
+        android:layout_centerHorizontal="true"
         android:padding="@dimen/activity_horizontal_margin"
+        android:background="@drawable/border_darker_gray"
         tools:text="Lorem ipsum" />
 </RelativeLayout>

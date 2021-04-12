@@ -12,15 +12,14 @@
 
     <ImageView
         android:id="@+id/profilePic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription"
-        tools:srcCompat="@tools:sample/avatars" />
-<!--    app:srcCompat="@tools:sample/avatars[0]"-->
+        app:srcCompat="@mipmap/ic_launcher_round"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/tvFullName"
@@ -28,11 +27,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-black"
+        android:text="John Doe"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profilePic"
-        tools:text="John Doe" />
+        app:layout_constraintTop_toBottomOf="@+id/profilePic" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
@@ -74,15 +73,27 @@
         app:layout_constraintStart_toEndOf="@+id/tvHobbies"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
+    <GridView
+        android:id="@+id/gvHobbies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3"
+        android:verticalSpacing="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHobbies"
+        tools:layout_editor_absoluteY="61dp" />
+
     <Button
         android:id="@+id/btnSaveChanges"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="32dp"
         android:text="@string/save_changes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEditHobbies" />
+        app:layout_constraintTop_toBottomOf="@+id/gvHobbies" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
