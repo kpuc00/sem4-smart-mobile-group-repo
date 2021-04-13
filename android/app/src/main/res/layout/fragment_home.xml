@@ -5,4 +5,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:contentDescription="@string/add_new_media"
+        android:focusable="true"
+        android:src="@drawable/ic_baseline_add_24"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/textBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/white"
+        android:src="@drawable/ic_baseline_edit_24"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/addBtn"
+        app:layout_constraintEnd_toEndOf="@+id/addBtn"
+        android:contentDescription="@string/add_text_post" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/imageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/white"
+        android:src="@drawable/ic_baseline_image_24"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textBtn"
+        app:layout_constraintEnd_toEndOf="@+id/textBtn"
+        android:contentDescription="@string/add_image" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/videoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:contentDescription="@string/add_video"
+        android:focusable="true"
+        android:src="@drawable/ic_baseline_videocam_24"
+        android:tint="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/voiceBtn"
+        app:layout_constraintEnd_toEndOf="@+id/voiceBtn" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/voiceBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/white"
+        android:src="@drawable/ic_baseline_mic_24"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imageBtn"
+        app:layout_constraintEnd_toEndOf="@+id/imageBtn"
+        android:contentDescription="@string/add_voice_recording" />
 </androidx.constraintlayout.widget.ConstraintLayout>

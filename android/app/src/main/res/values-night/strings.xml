@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="title_collections">Collections</string>
+    <string name="add_image">Add Image</string>
+    <string name="add_video">Add Video</string>
+    <string name="add_voice_recording">Add Voice Recording</string>
+    <string name="image">Image</string>
+    <string name="add_new_collection">Add New Collection</string>
+    <string name="add_event">Add Event</string>
 </resources>

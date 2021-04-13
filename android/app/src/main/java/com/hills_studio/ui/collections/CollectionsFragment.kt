@@ -4,30 +4,33 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
+import android.widget.GridView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
+import com.hills_studio.CollectionAdapter
 import com.hills_studio.R
 
 class CollectionsFragment : Fragment() {
 
-    private lateinit var collectionsViewModel: CollectionsViewModel
+//    private lateinit var collectionsViewModel: CollectionsViewModel
+    private val collectionList: Array<String>
+    get() = resources.getStringArray(R.array.collectionFakeData)
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        //collectionsViewModel =
-           // ViewModelProvider(this).get(CollectionsViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_collections, container, false)
-//        val textView: TextView = root.findViewById(R.id.text_dashboard)
-//        collectionsViewModel.text.observe(viewLifecycleOwner, Observer {
-//            textView.text = it
-//        })
-//        (activity as AppCompatActivity?)!!.supportActionBar!!.title = ""
+        val gvCollections = root.findViewById<GridView>(R.id.gvCollections)
+
+        val adapter = activity?.applicationContext?.let {
+            CollectionAdapter(
+                    it,
+                    R.layout.collection_item,
+                    collectionList
+            )
+        }
+        gvCollections.adapter = adapter
         return root
     }
 }

@@ -13,4 +13,25 @@
         <item>MODE_NIGHT_NO</item>
         <item>MODE_NIGHT_AUTO_BATTERY</item>
     </string-array>
+
+    <string-array name="collectionFakeData">
+        <item>Favourites</item>
+        <item>Barcelona</item>
+        <item>Wedding</item>
+        <item>Jodie\'s Birthday</item>
+    </string-array>
+
+    <string-array name="eventTitleFakeData">
+        <item>20 year anniversary with Lewis</item>
+        <item>Surprise Party for Denis</item>
+        <item>Bachelor Party for Jonas</item>
+        <item>Family Vacation Maldives</item>
+    </string-array>
+    <array name="eventDateFakeData">
+        <item>15\/8\/2021</item>
+        <item>19\/3\/2020</item>
+        <item>17\/7\/2021</item>
+        <item>15\/4\/2021</item>
+    </array>
+
 </resources>

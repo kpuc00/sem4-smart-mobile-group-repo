@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_events"
-        android:name="com.hills_studio.ui.members.MembersFragment"
+        android:name="com.hills_studio.ui.events.EventsFragment"
         android:label="@string/events_title"
         tools:layout="@layout/fragment_events" />
     <fragment

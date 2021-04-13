@@ -1,6 +1,5 @@
 package com.hills_studio
 
-import HobbiesListAdapter
 import android.os.Bundle
 import android.widget.GridView
 import androidx.appcompat.app.AppCompatActivity

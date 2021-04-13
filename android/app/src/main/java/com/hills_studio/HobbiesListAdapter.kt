@@ -1,10 +1,11 @@
+package com.hills_studio
+
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
-import com.hills_studio.R
 
 internal class HobbiesListAdapter internal constructor(
     context: Context,

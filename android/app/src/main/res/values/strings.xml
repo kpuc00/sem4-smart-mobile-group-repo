@@ -31,4 +31,14 @@
     <string name="edit_account">Edit account</string>
     <string name="logout">Logout</string>
     <string name="family_map">Family map</string>
+    <string name="add_new_media">Add New Media</string>
+    <string name="add_text_post">Add Text Post</string>
+    <string name="add_image">Add Image</string>
+    <string name="add_video">Add Video</string>
+    <string name="add_voice_recording">Add Voice Recording</string>
+    <string name="image">Image</string>
+    <string name="album_cover">Album Cover</string>
+    <string name="add_new_collection">Add New Collection</string>
+    <string name="add_event">Add Event</string>
+    <string name="open_event">Open</string>
 </resources>
