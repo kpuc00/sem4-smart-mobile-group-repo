@@ -6,15 +6,17 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import com.hills_studio.R
+import com.hills_studio.User
+import com.squareup.picasso.Picasso
 
 internal class MembersListAdapter internal constructor(
     context: Context,
     private val resource: Int,
-    private val membersList: Array<String>?
+    private val membersList: ArrayList<User>
 ) : ArrayAdapter<MembersListAdapter.ItemHolder>(context, resource) {
 
     override fun getCount(): Int {
-        return if (this.membersList != null) this.membersList.size else 0
+        return this.membersList.size
     }
 
     override fun getView(position: Int, givenConvertView: View?, parent: ViewGroup): View {
@@ -31,8 +33,8 @@ internal class MembersListAdapter internal constructor(
             holder = convertView.tag as ItemHolder
         }
 
-        holder.memberName!!.text = this.membersList!![position]
-        holder.memberAvatar!!.setImageResource(R.mipmap.ic_launcher)
+        holder.memberName!!.text = membersList[position].fullName
+        Picasso.get().load(membersList[position].avatar).into(holder.memberAvatar)
 
         return convertView
     }
