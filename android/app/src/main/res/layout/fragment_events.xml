@@ -14,26 +14,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ToggleButton
-            android:id="@+id/toggleButton3"
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="ToggleButton" />
+            android:text="All"
+            android:textAlignment="center"
+            android:layout_weight="1"/>
 
-        <ToggleButton
-            android:id="@+id/toggleButton2"
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="ToggleButton" />
+            android:text="Past"
+            android:textAlignment="center"
+            android:layout_weight="1"/>
 
-        <ToggleButton
-            android:id="@+id/toggleButton"
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="ToggleButton" />
+            android:text="Upcoming"
+            android:textAlignment="center"
+            android:layout_weight="1"/>
     </LinearLayout>
 
     <GridView
