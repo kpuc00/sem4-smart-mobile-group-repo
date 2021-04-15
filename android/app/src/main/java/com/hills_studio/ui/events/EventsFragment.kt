@@ -26,7 +26,7 @@ class EventsFragment : Fragment(){
         val adapter = activity?.applicationContext?.let {
             EventAdapter(
                     it,
-                    R.layout.event_item,
+                    R.layout.item_event,
                     eventTitleList,
                     eventDateList
             )

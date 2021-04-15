@@ -7,4 +7,7 @@
     <string name="image">Image</string>
     <string name="add_new_collection">Add New Collection</string>
     <string name="add_event">Add Event</string>
+    <string name="chip_all_events_text">All</string>
+    <string name="chip_past_events_text">Past</string>
+    <string name="chip_upcoming_events_text">Upcoming</string>
 </resources>

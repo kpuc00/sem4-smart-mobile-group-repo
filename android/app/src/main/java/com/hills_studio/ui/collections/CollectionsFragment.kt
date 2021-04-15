@@ -26,7 +26,7 @@ class CollectionsFragment : Fragment() {
         val adapter = activity?.applicationContext?.let {
             CollectionAdapter(
                     it,
-                    R.layout.collection_item,
+                    R.layout.item_collection,
                     collectionList
             )
         }
