@@ -18,8 +18,6 @@ import com.hills_studio.R
 
 class HomeFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
-
     private val rotateOpen: Animation by lazy{AnimationUtils.loadAnimation(context, R.anim.rotate_open_anim)}
     private val rotateClose: Animation by lazy{AnimationUtils.loadAnimation(context, R.anim.rotate_close_anim)}
     private val fromBottom: Animation by lazy{AnimationUtils.loadAnimation(context, R.anim.from_bottom_anim)}
