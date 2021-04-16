@@ -100,6 +100,7 @@ class MapsFragment : Fragment() {
     }
 
     private fun updateMapLocation() {
+        if (!isAdded) return
         val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
         mapFragment?.getMapAsync(callback)
     }
