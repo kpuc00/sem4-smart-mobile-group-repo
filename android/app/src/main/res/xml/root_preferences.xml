@@ -33,6 +33,11 @@
             android:title="@string/edit_account" />
         <Preference
             android:id="@+id/pLogout"
-            android:title="@string/logout" />
+            android:title="@string/logout">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.hills_studio.LoginActivity"
+                android:targetPackage="com.hills_studio" />
+        </Preference>
     </PreferenceCategory>
 </PreferenceScreen>
