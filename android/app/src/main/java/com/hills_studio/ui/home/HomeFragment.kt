@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.hills_studio.R
+import com.squareup.picasso.Picasso
 
 
 class HomeFragment : Fragment() {
@@ -50,6 +52,8 @@ class HomeFragment : Fragment() {
         imageBtn.setOnClickListener{imageAction()}
         videoBtn.setOnClickListener{videoAction()}
 
+        val imgVw = root.findViewById<ImageView>(R.id.pictureImgVw)
+        Picasso.get().load("https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Family_Photos_May_2014-0089_%2814202670584%29.jpg/800px-Family_Photos_May_2014-0089_%2814202670584%29.jpg").into(imgVw)
 
         return root
     }
