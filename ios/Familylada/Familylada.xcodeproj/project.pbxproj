@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		555C9B51264BCBAA00C5996F /* FamilyladaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B50264BCBAA00C5996F /* FamilyladaApp.swift */; };
-		555C9B53264BCBAA00C5996F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B52264BCBAA00C5996F /* ContentView.swift */; };
 		555C9B55264BCBAC00C5996F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555C9B54264BCBAC00C5996F /* Assets.xcassets */; };
 		555C9B58264BCBAC00C5996F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555C9B57264BCBAC00C5996F /* Preview Assets.xcassets */; };
-		827B03FA264BD31A006E0587 /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B03F9264BD31A006E0587 /* MyProfileView.swift */; };
+		555C9B6A264C121900C5996F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B69264C121900C5996F /* MainView.swift */; };
+		555C9B6D264C173300C5996F /* MembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B6C264C173300C5996F /* MembersView.swift */; };
+		555C9B70264C186700C5996F /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B6F264C186700C5996F /* GalleryView.swift */; };
+		555C9B73264C188F00C5996F /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B72264C188F00C5996F /* EventsView.swift */; };
+		555C9B76264C18B200C5996F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B75264C18B200C5996F /* HomeView.swift */; };
+		555C9B7A264C192800C5996F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B79264C192800C5996F /* ProfileView.swift */; };
+		555C9B7D264C195B00C5996F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B7C264C195B00C5996F /* SettingsView.swift */; };
+		555C9B80264C19B700C5996F /* FamilyPlusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B7F264C19B700C5996F /* FamilyPlusView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		555C9B4D264BCBAA00C5996F /* Familylada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Familylada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		555C9B50264BCBAA00C5996F /* FamilyladaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyladaApp.swift; sourceTree = "<group>"; };
-		555C9B52264BCBAA00C5996F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		555C9B54264BCBAC00C5996F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		555C9B57264BCBAC00C5996F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		555C9B59264BCBAC00C5996F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		827B03F9264BD31A006E0587 /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
+		555C9B69264C121900C5996F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		555C9B6C264C173300C5996F /* MembersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersView.swift; sourceTree = "<group>"; };
+		555C9B6F264C186700C5996F /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		555C9B72264C188F00C5996F /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		555C9B75264C18B200C5996F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		555C9B79264C192800C5996F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		555C9B7C264C195B00C5996F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		555C9B7F264C19B700C5996F /* FamilyPlusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPlusView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +67,17 @@
 			isa = PBXGroup;
 			children = (
 				555C9B50264BCBAA00C5996F /* FamilyladaApp.swift */,
-				555C9B52264BCBAA00C5996F /* ContentView.swift */,
+				555C9B6C264C173300C5996F /* MembersView.swift */,
+				555C9B69264C121900C5996F /* MainView.swift */,
+				555C9B7F264C19B700C5996F /* FamilyPlusView.swift */,
+				555C9B6F264C186700C5996F /* GalleryView.swift */,
+				555C9B72264C188F00C5996F /* EventsView.swift */,
+				555C9B75264C18B200C5996F /* HomeView.swift */,
+				555C9B79264C192800C5996F /* ProfileView.swift */,
+				555C9B7C264C195B00C5996F /* SettingsView.swift */,
 				555C9B54264BCBAC00C5996F /* Assets.xcassets */,
 				555C9B59264BCBAC00C5996F /* Info.plist */,
 				555C9B56264BCBAC00C5996F /* Preview Content */,
-				827B03F9264BD31A006E0587 /* MyProfileView.swift */,
 			);
 			path = Familylada;
 			sourceTree = "<group>";
@@ -141,8 +159,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				555C9B53264BCBAA00C5996F /* ContentView.swift in Sources */,
-				827B03FA264BD31A006E0587 /* MyProfileView.swift in Sources */,
+				555C9B7A264C192800C5996F /* ProfileView.swift in Sources */,
+				555C9B6D264C173300C5996F /* MembersView.swift in Sources */,
+				555C9B80264C19B700C5996F /* FamilyPlusView.swift in Sources */,
+				555C9B73264C188F00C5996F /* EventsView.swift in Sources */,
+				555C9B7D264C195B00C5996F /* SettingsView.swift in Sources */,
+				555C9B70264C186700C5996F /* GalleryView.swift in Sources */,
+				555C9B6A264C121900C5996F /* MainView.swift in Sources */,
+				555C9B76264C18B200C5996F /* HomeView.swift in Sources */,
 				555C9B51264BCBAA00C5996F /* FamilyladaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
