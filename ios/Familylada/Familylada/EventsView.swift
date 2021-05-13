@@ -1,26 +1,3 @@
-/*
- struct ContentView: View {
-     @State var showsAlert = false
-     var body: some View {
-         VStack {
-             Text("Hello, World!")
-             Button("alert") {
-                 self.showsAlert = true
-             }
-         }
-         .alert(isPresented: $showsAlert, TextAlert(title: "Title", action: {
-             print("Callback \($0 ?? "<cancel>")")
-         }))
-     }
- }
-
- struct ContentView_Previews: PreviewProvider {
-     static var previews: some View {
-         ContentView()
-     }
- }
- */
-
 import SwiftUI
 
 struct EventsView: View {
@@ -64,10 +41,10 @@ struct EventsView: View {
                             x: 3,
                             y: 3)
                     .alert(isPresented: $showsAlert, TextAlert(title: "Event Details", action: {
-                        print("Callback \($0 ?? "<cancel>")")
+                        print("Callback \($0 ?? "canceled")")
                         let input = $0 ?? ""
                         if(input != ""){
-                            EventCardView(card: EventCard.example)
+                            print("Adding event: " + input)
                         }
                     }))
                 }
