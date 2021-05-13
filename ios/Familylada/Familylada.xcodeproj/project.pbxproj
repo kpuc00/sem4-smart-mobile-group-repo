@@ -10,9 +10,6 @@
 		555C9B51264BCBAA00C5996F /* FamilyladaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B50264BCBAA00C5996F /* FamilyladaApp.swift */; };
 		555C9B55264BCBAC00C5996F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555C9B54264BCBAC00C5996F /* Assets.xcassets */; };
 		555C9B58264BCBAC00C5996F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555C9B57264BCBAC00C5996F /* Preview Assets.xcassets */; };
-		827B0403264C13AD006E0587 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B0402264C13AD006E0587 /* EventView.swift */; };
-		827B0406264C1693006E0587 /* EventCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B0405264C1693006E0587 /* EventCard.swift */; };
-		827B0409264C19E8006E0587 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B0408264C19E8006E0587 /* EventCardView.swift */; };
 		555C9B6A264C121900C5996F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B69264C121900C5996F /* MainView.swift */; };
 		555C9B6D264C173300C5996F /* MembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B6C264C173300C5996F /* MembersView.swift */; };
 		555C9B70264C186700C5996F /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B6F264C186700C5996F /* GalleryView.swift */; };
@@ -21,6 +18,8 @@
 		555C9B7A264C192800C5996F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B79264C192800C5996F /* ProfileView.swift */; };
 		555C9B7D264C195B00C5996F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B7C264C195B00C5996F /* SettingsView.swift */; };
 		555C9B80264C19B700C5996F /* FamilyPlusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B7F264C19B700C5996F /* FamilyPlusView.swift */; };
+		827B0406264C1693006E0587 /* EventCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B0405264C1693006E0587 /* EventCard.swift */; };
+		827B0409264C19E8006E0587 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B0408264C19E8006E0587 /* EventCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +36,6 @@
 		555C9B79264C192800C5996F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		555C9B7C264C195B00C5996F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		555C9B7F264C19B700C5996F /* FamilyPlusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPlusView.swift; sourceTree = "<group>"; };
-		827B0402264C13AD006E0587 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		827B0405264C1693006E0587 /* EventCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCard.swift; sourceTree = "<group>"; };
 		827B0408264C19E8006E0587 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,7 +82,6 @@
 				555C9B54264BCBAC00C5996F /* Assets.xcassets */,
 				555C9B59264BCBAC00C5996F /* Info.plist */,
 				555C9B56264BCBAC00C5996F /* Preview Content */,
-				827B0402264C13AD006E0587 /* EventView.swift */,
 				827B0405264C1693006E0587 /* EventCard.swift */,
 				827B0408264C19E8006E0587 /* EventCardView.swift */,
 			);
@@ -176,8 +173,6 @@
 				555C9B70264C186700C5996F /* GalleryView.swift in Sources */,
 				555C9B6A264C121900C5996F /* MainView.swift in Sources */,
 				555C9B76264C18B200C5996F /* HomeView.swift in Sources */,
-				827B0403264C13AD006E0587 /* EventView.swift in Sources */,
-				555C9B53264BCBAA00C5996F /* ContentView.swift in Sources */,
 				827B0406264C1693006E0587 /* EventCard.swift in Sources */,
 				555C9B51264BCBAA00C5996F /* FamilyladaApp.swift in Sources */,
 				827B0409264C19E8006E0587 /* EventCardView.swift in Sources */,
