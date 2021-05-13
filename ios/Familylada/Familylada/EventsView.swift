@@ -1,14 +1,30 @@
-//
-//  EventsView.swift
-//  Familylada
-//
-//  Created by Kristiyan Strahilov on 12.05.21.
-//
+/*
+ struct ContentView: View {
+     @State var showsAlert = false
+     var body: some View {
+         VStack {
+             Text("Hello, World!")
+             Button("alert") {
+                 self.showsAlert = true
+             }
+         }
+         .alert(isPresented: $showsAlert, TextAlert(title: "Title", action: {
+             print("Callback \($0 ?? "<cancel>")")
+         }))
+     }
+ }
+
+ struct ContentView_Previews: PreviewProvider {
+     static var previews: some View {
+         ContentView()
+     }
+ }
+ */
 
 import SwiftUI
 
 struct EventsView: View {
-    @State private var showingAlert = false
+    @State private var showsAlert = false
     
     var body: some View {
         VStack{
@@ -31,7 +47,7 @@ struct EventsView: View {
                 HStack {
                     Spacer()
                     Button(action: {
-                        showingAlert = true
+                        self.showsAlert = true
                     }, label: {
                         Text("+")
                             .font(.system(.largeTitle))
@@ -39,9 +55,7 @@ struct EventsView: View {
                             .foregroundColor(Color.white)
                             .padding(.bottom, 7)
                     })
-                    .alert(isPresented: $showingAlert) {
-                                Alert(title: Text("Add new Event"), message: Text("hmmm"), dismissButton: .default(Text("Got it!")))
-                            }
+                    
                     .background(Color.blue)
                     .cornerRadius(38.5)
                     .padding()
@@ -49,6 +63,13 @@ struct EventsView: View {
                             radius: 3,
                             x: 3,
                             y: 3)
+                    .alert(isPresented: $showsAlert, TextAlert(title: "Event Details", action: {
+                        print("Callback \($0 ?? "<cancel>")")
+                        let input = $0 ?? ""
+                        if(input != ""){
+                            EventCardView(card: EventCard.example)
+                        }
+                    }))
                 }
             }
         }
