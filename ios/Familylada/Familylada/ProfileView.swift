@@ -11,7 +11,7 @@ struct ProfileView: View {
     @State private var text = ""
     
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             HStack {
                 VStack {
                     Image(uiImage: "https://robohash.org/mollitiavelitasperiores.png?size=50x50&set=set1".load()).resizable().frame(width: 120, height: 120, alignment: .center)
