@@ -7,6 +7,29 @@
 
 import SwiftUI
 
+// this function is accessible from everywhere
+extension String {
+    func load() -> UIImage {
+        // try catch block
+        do {
+            // convert string to URL
+            guard let url = URL(string: self) else {
+                // return empty image if the URL is invalid
+                return UIImage()
+            }
+            
+            // convert URL to data
+            let data: Data = try Data(contentsOf: url)
+            
+            // create UIImage object from Data
+            // the optional value is used when the image from the URL does not exist
+            return UIImage(data: data) ?? UIImage()
+            
+        } catch {}
+        return UIImage()
+    }
+}
+
 struct MainView: View {
     @State var profileLink = false
     @State var settingsLink = false
