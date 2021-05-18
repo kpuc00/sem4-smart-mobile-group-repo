@@ -64,6 +64,7 @@ struct MainView: View {
                     }
             }
             
+            
             .background(
                 NavigationLink(destination: ProfileView(), isActive: $profileLink) {}
             )
@@ -73,13 +74,18 @@ struct MainView: View {
             .navigationBarTitle("Familylada", displayMode: .large)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
-                        profileLink = true
-                    }) {
-                        Image(systemName: "person.crop.circle")
-                    }
+                    VStack{
+                        
+                        Button(action: {
+                            profileLink = true
+                        }, label:
+                            {
+                                Image(systemName: "person.crop.circle")
+                            }
+                        )
+                    }.accentColor(Color(.yellow))
+                   
                 }
-                
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         settingsLink = true
@@ -88,7 +94,7 @@ struct MainView: View {
                     }
                 }
             }
-        }
+        }.accentColor(Color.yellow)
     }
 }
 
