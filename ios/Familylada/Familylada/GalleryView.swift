@@ -31,7 +31,7 @@ struct DetailedView: View {
         let img = UIImage(named: selectedImage)!
         return Image(uiImage: img)
             .resizable()
-            .aspectRatio(480/480, contentMode: .fit)
+            .scaledToFit()
             .navigationBarTitle(Text(selectedImage), displayMode: .inline)
             .navigationBarHidden(hideNavigationBar)
             .onTapGesture {
