@@ -12,8 +12,6 @@ class LocationManager: NSObject {
         self.locationManager.distanceFilter = kCLDistanceFilterNone
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
-        
-        
     }
 }
     extension LocationManager: CLLocationManagerDelegate{

@@ -6,11 +6,12 @@ struct Map: View {
     
     var body: some View {
         MapView()
+            .ignoresSafeArea()
     }
 }
 
 struct Map_Previews: PreviewProvider {
     static var previews: some View {
-        MembersView()
+        MapView()
     }
 }
