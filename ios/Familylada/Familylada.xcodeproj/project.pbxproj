@@ -18,6 +18,8 @@
 		555C9B7A264C192800C5996F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B79264C192800C5996F /* ProfileView.swift */; };
 		555C9B7D264C195B00C5996F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B7C264C195B00C5996F /* SettingsView.swift */; };
 		555C9B80264C19B700C5996F /* FamilyPlusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9B7F264C19B700C5996F /* FamilyPlusView.swift */; };
+		55B5655A2656856A0049BE81 /* FamilyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B565592656856A0049BE81 /* FamilyHistoryView.swift */; };
+		55B5655C265685860049BE81 /* AudioMemoirView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B5655B265685860049BE81 /* AudioMemoirView.swift */; };
 		827B0406264C1693006E0587 /* EventCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B0405264C1693006E0587 /* EventCard.swift */; };
 		827B0409264C19E8006E0587 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B0408264C19E8006E0587 /* EventCardView.swift */; };
 		827B0415264D194D006E0587 /* TextAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B0414264D194D006E0587 /* TextAlert.swift */; };
@@ -42,6 +44,8 @@
 		555C9B79264C192800C5996F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		555C9B7C264C195B00C5996F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		555C9B7F264C19B700C5996F /* FamilyPlusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPlusView.swift; sourceTree = "<group>"; };
+		55B565592656856A0049BE81 /* FamilyHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyHistoryView.swift; sourceTree = "<group>"; };
+		55B5655B265685860049BE81 /* AudioMemoirView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMemoirView.swift; sourceTree = "<group>"; };
 		827B0405264C1693006E0587 /* EventCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCard.swift; sourceTree = "<group>"; };
 		827B0408264C19E8006E0587 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		827B0414264D194D006E0587 /* TextAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlert.swift; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 				827B0413264D192C006E0587 /* TextAlert */,
 				555C9B50264BCBAA00C5996F /* FamilyladaApp.swift */,
 				555C9B6C264C173300C5996F /* MembersView.swift */,
+				55B565592656856A0049BE81 /* FamilyHistoryView.swift */,
+				55B5655B265685860049BE81 /* AudioMemoirView.swift */,
 				555C9B69264C121900C5996F /* MainView.swift */,
 				555C9B7F264C19B700C5996F /* FamilyPlusView.swift */,
 				555C9B6F264C186700C5996F /* GalleryView.swift */,
@@ -204,12 +210,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B5655C265685860049BE81 /* AudioMemoirView.swift in Sources */,
 				555C9B7A264C192800C5996F /* ProfileView.swift in Sources */,
 				555C9B6D264C173300C5996F /* MembersView.swift in Sources */,
 				555C9B80264C19B700C5996F /* FamilyPlusView.swift in Sources */,
 				827B0415264D194D006E0587 /* TextAlert.swift in Sources */,
 				555C9B73264C188F00C5996F /* EventsView.swift in Sources */,
 				555C9B7D264C195B00C5996F /* SettingsView.swift in Sources */,
+				55B5655A2656856A0049BE81 /* FamilyHistoryView.swift in Sources */,
 				555C9B70264C186700C5996F /* GalleryView.swift in Sources */,
 				555C9B6A264C121900C5996F /* MainView.swift in Sources */,
 				555C9B76264C18B200C5996F /* HomeView.swift in Sources */,
