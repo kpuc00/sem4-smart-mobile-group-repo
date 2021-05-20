@@ -18,7 +18,7 @@ struct AudioMemoirView: View {
                     }
                     Spacer()
                     Image(systemName: "play.circle")
-                }.padding().overlay(RoundedRectangle(cornerRadius: 25).stroke(lineWidth: 1).foregroundColor(Color.gray))
+                }.padding().overlay(Capsule(style: .continuous).stroke(Color.gray))
                 
                 HStack {
                     VStack(alignment: .leading) {
@@ -27,7 +27,7 @@ struct AudioMemoirView: View {
                     }
                     Spacer()
                     Image(systemName: "play.circle")
-                }.padding().overlay(RoundedRectangle(cornerRadius: 25).stroke(lineWidth: 1).foregroundColor(Color.gray))
+                }.padding().overlay(Capsule(style: .continuous).stroke(Color.gray))
                 
                 HStack {
                     VStack(alignment: .leading) {
@@ -36,8 +36,7 @@ struct AudioMemoirView: View {
                     }
                     Spacer()
                     Image(systemName: "play.circle")
-                }.padding().overlay(RoundedRectangle(cornerRadius: 25).stroke(lineWidth: 1).foregroundColor(Color.gray))
-                
+                }.padding().overlay(Capsule(style: .continuous).stroke(Color.gray))
                 HStack {
                     VStack(alignment: .leading) {
                         Text("Untitled")
@@ -45,7 +44,7 @@ struct AudioMemoirView: View {
                     }
                     Spacer()
                     Image(systemName: "play.circle")
-                }.padding().overlay(RoundedRectangle(cornerRadius: 25).stroke(lineWidth: 1).foregroundColor(Color.gray))
+                }.padding().overlay(Capsule(style: .continuous).stroke(Color.gray))
             }
             VStack {
                 Spacer()
@@ -57,6 +56,7 @@ struct AudioMemoirView: View {
                 }
             }.padding()
         }.padding()
+        .navigationTitle("Audio Memoir")
     }
 }
 

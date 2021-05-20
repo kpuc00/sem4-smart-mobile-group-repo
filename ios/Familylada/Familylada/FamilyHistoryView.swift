@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct FamilyHistoryView: View {
+    @State private var text = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView{
+            HStack {
+                Image(systemName: "magnifyingglass")
+                TextField("Search...", text: $text).disableAutocorrection(true)
+            }.padding().overlay(Capsule(style: .continuous).stroke(Color.gray))
+        }.padding()
+        .navigationTitle("Family History")
     }
 }
 
