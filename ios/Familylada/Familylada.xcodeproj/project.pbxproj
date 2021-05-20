@@ -26,6 +26,10 @@
 		827B042F264D2AF0006E0587 /* ep1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 827B042A264D2AF0006E0587 /* ep1.jpg */; };
 		827B0430264D2AF0006E0587 /* ep5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 827B042B264D2AF0006E0587 /* ep5.jpg */; };
 		827B0431264D2AF0006E0587 /* ep4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 827B042C264D2AF0006E0587 /* ep4.jpg */; };
+		8288B1002656833400F43EB5 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B0FF2656833400F43EB5 /* MapView.swift */; };
+		8288B1072656866200F43EB5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B1062656866200F43EB5 /* Coordinator.swift */; };
+		8288B10C265686D400F43EB5 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B10B265686D400F43EB5 /* Map.swift */; };
+		8288B1102656924500F43EB5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288B10F2656924500F43EB5 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		827B042A264D2AF0006E0587 /* ep1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ep1.jpg; sourceTree = "<group>"; };
 		827B042B264D2AF0006E0587 /* ep5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ep5.jpg; sourceTree = "<group>"; };
 		827B042C264D2AF0006E0587 /* ep4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ep4.jpg; sourceTree = "<group>"; };
+		8288B0FF2656833400F43EB5 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		8288B1062656866200F43EB5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8288B10B265686D400F43EB5 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		8288B10F2656924500F43EB5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,8 @@
 		555C9B4F264BCBAA00C5996F /* Familylada */ = {
 			isa = PBXGroup;
 			children = (
+				8288B10E2656922F00F43EB5 /* Managers */,
+				8288B1022656853800F43EB5 /* Coordinators */,
 				827B0413264D192C006E0587 /* TextAlert */,
 				555C9B50264BCBAA00C5996F /* FamilyladaApp.swift */,
 				555C9B6C264C173300C5996F /* MembersView.swift */,
@@ -98,6 +108,8 @@
 				555C9B56264BCBAC00C5996F /* Preview Content */,
 				827B0405264C1693006E0587 /* EventCard.swift */,
 				827B0408264C19E8006E0587 /* EventCardView.swift */,
+				8288B0FF2656833400F43EB5 /* MapView.swift */,
+				8288B10B265686D400F43EB5 /* Map.swift */,
 			);
 			path = Familylada;
 			sourceTree = "<group>";
@@ -128,6 +140,22 @@
 				827B042C264D2AF0006E0587 /* ep4.jpg */,
 			);
 			path = img_src;
+			sourceTree = "<group>";
+		};
+		8288B1022656853800F43EB5 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8288B1062656866200F43EB5 /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8288B10E2656922F00F43EB5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8288B10F2656924500F43EB5 /* LocationManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,12 +234,16 @@
 			files = (
 				555C9B7A264C192800C5996F /* ProfileView.swift in Sources */,
 				555C9B6D264C173300C5996F /* MembersView.swift in Sources */,
+				8288B1072656866200F43EB5 /* Coordinator.swift in Sources */,
 				555C9B80264C19B700C5996F /* FamilyPlusView.swift in Sources */,
+				8288B1102656924500F43EB5 /* LocationManager.swift in Sources */,
 				827B0415264D194D006E0587 /* TextAlert.swift in Sources */,
+				8288B1002656833400F43EB5 /* MapView.swift in Sources */,
 				555C9B73264C188F00C5996F /* EventsView.swift in Sources */,
 				555C9B7D264C195B00C5996F /* SettingsView.swift in Sources */,
 				555C9B70264C186700C5996F /* GalleryView.swift in Sources */,
 				555C9B6A264C121900C5996F /* MainView.swift in Sources */,
+				8288B10C265686D400F43EB5 /* Map.swift in Sources */,
 				555C9B76264C18B200C5996F /* HomeView.swift in Sources */,
 				827B0406264C1693006E0587 /* EventCard.swift in Sources */,
 				555C9B51264BCBAA00C5996F /* FamilyladaApp.swift in Sources */,
@@ -347,7 +379,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Familylada/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Familylada/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -368,7 +400,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Familylada/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Familylada/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

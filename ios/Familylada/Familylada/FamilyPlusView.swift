@@ -8,12 +8,14 @@ struct FamilyPlusView: View {
         GridItem(.adaptive(minimum: 180), spacing: 0)
         
     ]
-    
+    @State private var goToMap = false
     var body: some View {
         ScrollView{
+            NavigationLink("", destination: Map(), isActive: $goToMap)
             LazyVGrid(columns: twoColumnGrid){
-                Button(action: { print("btn_1 clicked") }, label : {
+                Button(action: {  self.goToMap.toggle()}, label : {
                     VStack(alignment: .center, spacing: 0, content: {
+                        
                         Image(systemName: "map.fill")
                             .resizable()
                             .frame(width: 50, height: 50, alignment: .center)
@@ -30,6 +32,8 @@ struct FamilyPlusView: View {
                         x: 3,
                         y: 3)
                 .cornerRadius(30)
+                .navigate(to: Map(), when: $goToMap)
+                
                 
                 
                 Button(action: { print("btn_2 clicked") }, label : {
@@ -88,6 +92,33 @@ struct FamilyPlusView: View {
                         x: 3,
                         y: 3)
                 .cornerRadius(38.5)
+            }
+        }
+//        .navigate(to: Map(), when: $goToMap)
+    }
+}
+
+extension View {
+
+    /// Navigate to a new view.
+    /// - Parameters:
+    ///   - view: View to navigate to.
+    ///   - binding: Only navigates when this condition is `true`.
+    func navigate<NewView: View>(to view: NewView, when binding: Binding<Bool>) -> some View {
+        NavigationView {
+            ZStack {
+                self
+                    .navigationBarTitle("")
+                    .navigationBarHidden(true)
+
+                NavigationLink(
+                    destination: view
+                        .navigationBarTitle("")
+                        .navigationBarHidden(true),
+                    isActive: binding
+                ) {
+                    EmptyView()
+                }
             }
         }
     }
