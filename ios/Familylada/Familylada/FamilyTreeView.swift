@@ -9,8 +9,11 @@ import SwiftUI
 
 struct FamilyTreeView: View {
     var body: some View {
-        Text("Hello, World!")
+        Image("tree")
+            .resizable()
+            .scaledToFit()
             .navigationTitle("Family Tree")
+            
     }
 }
 
