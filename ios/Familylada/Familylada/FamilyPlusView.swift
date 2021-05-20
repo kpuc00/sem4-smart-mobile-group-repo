@@ -9,9 +9,15 @@ struct FamilyPlusView: View {
         
     ]
     @State private var goToMap = false
+    @State private var goToAudioMemoir = false
+    @State private var goToFamilyHistory = false
+    @State private var goToFamilyTree = false
     var body: some View {
         ScrollView{
             NavigationLink("", destination: Map(), isActive: $goToMap)
+            NavigationLink("", destination: AudioMemoirView(), isActive: $goToAudioMemoir)
+            NavigationLink("", destination: FamilyHistoryView(), isActive: $goToFamilyHistory)
+            NavigationLink("", destination: FamilyTreeView(), isActive: $goToFamilyTree)
             LazyVGrid(columns: twoColumnGrid){
                 Button(action: {  self.goToMap.toggle()}, label : {
                     VStack(alignment: .center, spacing: 0, content: {
@@ -36,12 +42,12 @@ struct FamilyPlusView: View {
                 
                 
                 
-                Button(action: { print("btn_2 clicked") }, label : {
+                Button(action: { self.goToAudioMemoir.toggle() }, label : {
                     VStack(alignment: .center, spacing: nil, content: {
                         Image(systemName: "mic.fill")
                             .resizable()
                             .frame(width: 35, height: 50, alignment: .center)
-                        Text("Voice Memoirs")
+                        Text("Audio Memoir")
                             .font(.title)
                             .multilineTextAlignment(.center)
                     })
@@ -55,7 +61,7 @@ struct FamilyPlusView: View {
                         y: 3)
                 .cornerRadius(30)
                 
-                Button(action: { print("btn_3 clicked") }, label : {
+                Button(action: { self.goToFamilyHistory.toggle() }, label : {
                     VStack(alignment: .center, spacing: nil, content: {
                         Image(systemName: "book.fill")
                             .resizable()
@@ -74,7 +80,7 @@ struct FamilyPlusView: View {
                         y: 3)
                 .cornerRadius(38.5)
                 
-                Button(action: { print("btn_4 clicked") }, label : {
+                Button(action: { self.goToFamilyTree.toggle() }, label : {
                     VStack(alignment: .center, spacing: nil, content: {
                         Image(systemName: "arrow.branch")
                             .resizable()
