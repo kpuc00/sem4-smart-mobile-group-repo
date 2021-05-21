@@ -32,7 +32,7 @@ struct MembersView: View {
             HStack {
                 Image(systemName: "magnifyingglass")
                 TextField("Search...", text: $text).disableAutocorrection(true)
-            }.padding().overlay(Capsule(style: .continuous).stroke(Color.gray))
+            }.padding().overlay(Capsule(style: .continuous).stroke(Color.gray)).padding()
             
             LazyVGrid(columns: layout, spacing: 20) {
                 ForEach(0..<users.count) {
@@ -42,8 +42,8 @@ struct MembersView: View {
                         Text(users[index].0).multilineTextAlignment(.center)
                     }
                 }
-            }
-        }.padding()
+            }.padding()
+        }
     }
 }
 

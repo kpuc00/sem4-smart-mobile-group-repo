@@ -18,7 +18,7 @@ struct AudioMemoirView: View {
                     }
                     Spacer()
                     Image(systemName: "play.circle")
-                }.padding().overlay(Capsule(style: .continuous).stroke(Color.gray))
+                }.padding().background(Color.white).clipped().cornerRadius(20).shadow(radius: 3)
                 
                 HStack {
                     VStack(alignment: .leading) {
@@ -27,7 +27,7 @@ struct AudioMemoirView: View {
                     }
                     Spacer()
                     Image(systemName: "play.circle")
-                }.padding().overlay(Capsule(style: .continuous).stroke(Color.gray))
+                }.padding().background(Color.white).clipped().cornerRadius(20).shadow(radius: 3)
                 
                 HStack {
                     VStack(alignment: .leading) {
@@ -36,7 +36,7 @@ struct AudioMemoirView: View {
                     }
                     Spacer()
                     Image(systemName: "play.circle")
-                }.padding().overlay(Capsule(style: .continuous).stroke(Color.gray))
+                }.padding().background(Color.white).clipped().cornerRadius(20).shadow(radius: 3)
                 HStack {
                     VStack(alignment: .leading) {
                         Text("Untitled")
@@ -44,7 +44,7 @@ struct AudioMemoirView: View {
                     }
                     Spacer()
                     Image(systemName: "play.circle")
-                }.padding().overlay(Capsule(style: .continuous).stroke(Color.gray))
+                }.padding().background(Color.white).clipped().cornerRadius(20).shadow(radius: 3)
             }
             VStack {
                 Spacer()
@@ -52,10 +52,10 @@ struct AudioMemoirView: View {
                     Spacer()
                     Button(action: {}, label: {
                         Image(systemName: "largecircle.fill.circle").foregroundColor(.white).padding()
-                    }).background(Color.yellow).cornerRadius(30)
+                    }).background(Color.yellow).cornerRadius(30).shadow(radius: 3, x:3, y: 3)
                 }
             }.padding()
-        }.padding()
+        }
         .navigationTitle("Audio Memoir")
     }
 }
