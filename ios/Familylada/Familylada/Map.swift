@@ -7,6 +7,8 @@ struct Map: View {
     var body: some View {
         MapView()
             .ignoresSafeArea()
+            .navigationTitle("Family map")
+            .navigationBarTitleDisplayMode(.inline)
     }
 }
 
