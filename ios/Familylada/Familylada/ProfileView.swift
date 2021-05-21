@@ -24,10 +24,10 @@ struct ProfileView: View {
             }
             HStack {
                 VStack(alignment: .leading) {
-                    Text("Bio")
-                    TextField("type something...", text: $text).disableAutocorrection(true)
+                    Text("Bio:")
+                    TextField("type something...", text: $text).padding().disableAutocorrection(true).background(Color.white).clipped().shadow(radius: 3, x: 3, y: 3)
                 }
-            }
+            }.padding()
             HStack {
                 Text("Hobbies").font(.title)
                     Button(action: {
@@ -45,12 +45,12 @@ struct ProfileView: View {
                     .shadow(color: Color.black.opacity(0.3), radius: 3, x: 3, y: 3)
             }
             HStack {
-                Text("Football").padding(6).border(Color.black, width: 1)
-                Text("Keanu Reeves").padding(6).border(Color.black, width: 1)
-                Text("Pop music").padding(6).border(Color.black, width: 1)
-                Text("Golf").padding(6).border(Color.black, width: 1)
+                Text("Football").padding(6).overlay(Capsule(style: .continuous).stroke())
+                Text("Keanu Reeves").padding(6).overlay(Capsule(style: .continuous).stroke())
+                Text("Pop music").padding(6).overlay(Capsule(style: .continuous).stroke())
+                Text("Golf").padding(6).overlay(Capsule(style: .continuous).stroke())
             }
-        }.padding()
+        }
         .navigationTitle("Nance Reddington")
     }
 }

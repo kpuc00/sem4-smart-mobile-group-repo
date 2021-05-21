@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         ScrollView {
+            Spacer()
             HStack {
                 VStack {
                     HStack {
@@ -22,7 +23,7 @@ struct HomeView: View {
                         Spacer()
                     }.padding()
                 }
-            }.padding().overlay(RoundedRectangle(cornerRadius: 25).stroke(lineWidth: 1).foregroundColor(Color.gray))
+            }.padding().background(Color.white).clipped().shadow(radius: 3)
             
             HStack {
                 VStack {
@@ -39,8 +40,7 @@ struct HomeView: View {
                         Image("sea").resizable().scaledToFit()
                     }
                 }
-            }.padding().overlay(RoundedRectangle(cornerRadius: 25).stroke(lineWidth: 1).foregroundColor(Color.gray))
-            
+            }.padding().background(Color.white).clipped().shadow(radius: 3)
             HStack {
                 VStack {
                     HStack {
@@ -52,7 +52,7 @@ struct HomeView: View {
                         Image("family").resizable().scaledToFit()
                     }
                 }
-            }.padding().overlay(RoundedRectangle(cornerRadius: 25).stroke(lineWidth: 1).foregroundColor(Color.gray))
+            }.padding().background(Color.white).clipped().shadow(radius: 3)
         }
     }
 }
