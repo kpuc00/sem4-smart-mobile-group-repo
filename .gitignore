@@ -187,3 +187,6 @@ playground.xcworkspace
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.toptal.com/developers/gitignore/api/swift,xcode,objective-c,osx
+
+# ignore gradle.properties file
+gradle.properties

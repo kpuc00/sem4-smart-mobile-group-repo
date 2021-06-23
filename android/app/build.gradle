@@ -18,6 +18,8 @@ android {
         versionCode 1
         versionName "1.0"
 
+        buildConfigField("String", "GMAP_API_KEY", GMAP_API_KEY)
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
